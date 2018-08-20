@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>background</title>
+<style>
+
+
+
+.box{
+   width: 300px;
+   height: 300px;
+   padding: 20px; /*패딩에도 배경색은 나오게 된다.*/
+   border: 3px solid black;
+   background: url(img/2641FF4C5900DDDE1E.png) no-repeat 50% 50%;
+   
+}
+
+
+/* css3: 익스 8버전에서는 쓰면 안된다 모바일 작업에서는 얼마든지 써도 된다 */
+
+.box2{
+   
+   /*background-size: 100% 100%;*/
+   /*background-size: 100% auto;*/
+   /*background-size: auto 100%;*/
+   background-size: cover;
+}
+
+
+   /* left | center | right | top | bottom */
+   
+   /* 
+   background 후에 
+   background-color 를 지정해야한다. 
+   그래야 둘다 수정 가능하다
+   
+   1)    
+   background: url(img/nn.png);
+   background-color: lime;
+   
+   2) 
+   
+   background-color: lime;
+   background-image: url(img/nn.png);
+   
+   */
+   
+   
+/*
+iconmonstr.com
+여러가지 아이콘을 제공한다
+*/
+</style>
+</head>
+<body>
+   <div class="box box2">
+   Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum aliquid veritatis adipisci ea placeat sint itaque eaque quod nulla harum doloribus iure labore similique ducimus, dolor minus recusandae, ratione porro?
+   </div>
+   <div class="box">
+   Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum aliquid veritatis adipisci ea placeat sint itaque eaque quod nulla harum doloribus iure labore similique ducimus, dolor minus recusandae, ratione porro?
+   </div>
+</body>
+</html>
+
